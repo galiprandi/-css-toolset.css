@@ -125,8 +125,7 @@ input[type="submit"] {
   font-weight: bolder;
 }
 button.solid:hover,
-input[type="submit"]:hover,
-{
+input[type="submit"]:hover {
   padding: 1rem;
   border: none;
   margin: 0;
