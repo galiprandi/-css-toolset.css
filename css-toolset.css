@@ -15,12 +15,13 @@
 *::after {
   box-sizing: border-box;
 }
-
 body {
-  margin: 1.1rem;
   color: var(--text);
   letter-spacing: 0.076rem;
   font-weight: 400;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 nav {
   background: var(--text);
