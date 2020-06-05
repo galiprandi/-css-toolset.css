@@ -104,6 +104,7 @@ input[type="submit"] {
   line-height: 2.3rem;
   padding: 0 1rem;
   margin: 0.5rem 0;
+  background-color: inherit;
 }
 button:hover {
   color: var(--hover);
