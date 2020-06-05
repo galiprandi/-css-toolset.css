@@ -1,7 +1,7 @@
 # css-toolset.css
-> A super lightweight css toolset
+> A super lightweight css toolset and mobile first
 
-### [View simple demo](https://galiprandi.github.io/css-toolset.css/index.html)
+### [Very simple demo](https://galiprandi.github.io/css-toolset.css/index.html)
 
 ## Usage
 
