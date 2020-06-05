@@ -12,6 +12,7 @@ or simply linking:
 `<link rel="stylesheet" href="https://galiprandi.github.io/css-toolset.css/css-toolset.css">`
 
 ## ToDo:
-[ ] More test
 
-[ ] Support more elements
+- More test
+
+- Support more elements
