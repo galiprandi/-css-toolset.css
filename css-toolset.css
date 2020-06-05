@@ -9,23 +9,11 @@
 }
 
 body {
-  font-weight: 100;
   margin: 1.1rem;
   color: var(--text);
   letter-spacing: 0.076rem;
   font-weight: 400;
 }
-hr.separation {
-  padding: 1rem;
-  border: none;
-  margin: 0;
-}
-.inverted {
-  background-color: var(--hover);
-  padding: 0.3rem 1rem;
-  color: white;
-}
-
 nav {
   background: var(--text);
   color: white;
@@ -45,20 +33,12 @@ h5,
 h6 {
   text-align: center;
 }
-h1.title,
-h2.title,
-h3.title,
-h4.title,
-h5.title,
-h6.title {
-  color: var(--hover);
-  border-bottom: 2px solid var(--text);
-  padding-bottom: 0.8rem;
-}
-ul {
+ul,
+ol {
   padding-left: 1rem;
 }
-ul > h1 {
+ul > h1,
+ol > h1 {
   font-size: 1rem;
   text-align: left;
   border-bottom: 1px solid;
@@ -94,86 +74,140 @@ hr {
   opacity: 0.7;
   margin: 3rem 0;
 }
-button,
-input[type="submit"] {
-  outline: 0;
-  border: 1px solid var(--text);
-  border-radius: 0.3rem;
-  cursor: pointer;
-  letter-spacing: 0.1rem;
-  line-height: 2.3rem;
-  padding: 0 1rem;
-  margin: 0.5rem 0;
-  background-color: inherit;
-}
+/*
+* button
+ */
 button:hover {
   color: var(--hover);
   border-color: var(--hover);
-  transition: all 100ms ease-in-out;
 }
-button.flat {
-  border-radius: 0;
-}
-button.solid,
-input[type="submit"] {
-  border-color: var(--text);
-  background-color: var(--text);
+button.solid:hover {
   color: white;
-  font-weight: bolder;
-}
-button.solid:hover,
-input[type="submit"]:hover {
   background-color: var(--hover);
-  border-color: var(--hover);
 }
-button.outline {
-  border: 0;
-  font-weight: bold;
+button.inverted:hover {
+  color: white;
+  background-color: var(--text);
+  border-color: var(--text);
 }
-button.invert {
-  border-color: var(--hover);
-  color: var(--hover);
+button,
+input[type="submit"] {
+  transition: all 100ms linear;
+  outline: 0;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  margin: 0.5rem 0;
 }
-button.invert:hover,
-select:hover {
+button.big {
+  display: block;
+  width: 100%;
+}
+
+/*
+* from
+*/
+ select:hover {
   border-color: var(--text);
   color: var(--text);
 }
 form * {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	font-family: unset;
+	margin: .5rem 0;
 }
 fieldset {
-  border-radius: 0.5rem;
-  border: 1px solid;
-  padding: 1.3rem 0.6rem;
+	border-radius: 0.3rem;
+	border: 1px solid;
+	padding: 1rem;
 }
 label {
   opacity: 0.6;
-  margin: 1.5rem 0 0.5rem 0.4rem;
+  padding-left: .5rem;
 }
-input,
-select,
-textarea {
-  border: 1px solid;
-  line-height: 2.3rem;
-  border-radius: 0.4rem;
-  padding: 0 1.3rem;
-  cursor: pointer;
+input, select, textarea {
+	border: 1px solid;
+	line-height: 2.3rem;
+	border-radius: 0.3rem;
+	padding-left: 1rem;
+	cursor: pointer;
+	outline: 0;
 }
-input:focus,
 input:hover,
+input:focus,
+textarea:hover,
 textarea:focus,
 select:focus,
-select:hover {
+select:hover
+{
   outline: 0;
   border-color: var(--hover);
 }
 select {
   padding: 0.3rem;
 }
-input[type="checkbox"] {
-  outline: 1px solid;
-  margin: 1.5rem 0;
-  width: auto;
+input[type="checkbox"], input[type="radio"] {
+	width: auto;
+}
+
+/*
+*  .title
+*/
+nav.title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title {
+  color: var(--hover);
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 0.8rem;
+}
+/*
+* .separation
+*/
+hr.separation {
+  padding: 1rem;
+  border: none;
+  margin: 0;
+}
+
+/*
+* .solid
+*/
+.solid {
+  background-color: var(--text);
+  color: white;
+}
+/*
+* .outline
+*/
+.outline {
+  border: none;
+}
+/*
+* .flat
+*/
+.inverted.flat,
+.flat {
+  border-radius: 0;
+}
+/*
+* .inverted
+*/
+.inverted {
+  background-color: var(--hover);
+  color: white;
+}
+p.inverted {
+  border-radius: 0.4rem;
+  padding: 0.3rem 1rem;
 }

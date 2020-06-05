@@ -16,78 +16,113 @@
     <nav>
       <h1>css-toolset.css</h1>
     </nav>
-    <nav class="inverted">
-      <span>This is .inverted element</span>
-    </nav>
+    <p>
+      This <em>small set of utilities (-3k)</em> is intended to generate a starting
+      framework from which to start to generate mobile sites with more modern
+      styles, for this it overwrites some styles that default browsers apply.
+    </p>
+
     <hr class="separation" />
-    <h1 class="title">This is a h1.title</h1>
+    
+    <h3 class="title">Nav elements examples</h3>
+    <nav>This is default nav</nav>
+    <nav class="title">This is nav.title</nav>
+    <nav class="inverted">This is .inverted element</nav>
+    <hr class="separation" />
+
+    <h3 class="title">Headline elements examples</h3>
     <h1>This is a h1</h1>
     <h2>This is a h2</h2>
     <h3>This is a h3</h3>
-    <h3 class="title">This is a h3.title</h3>
     <h4>This is a h4</h4>
     <h5>This is a h5</h5>
     <h6>This is a h6</h6>
-    <p class="inverted">This have .inverted class</p>
+    <h1 class="title">This is a h1.title</h1>
+    <h2 class="title">This is a h2.title</h2>
+    <h3 class="title">This is a h3.title</h3>
+    <h4 class="title">...</h4>
+
     <hr class="separation" />
+
+    <h3 class="title">p elements examples</h3>
+    <p class="inverted">This is a p.inverted"</p>
+    <p class="inverted flat">This is a p.inverted.flat"</p>
     <p>
-      Lorem ipsum dolor
-      <a href="#" title="This is anchor">sit amet consectetur</a> adipisicing
-      elit. Nobis dicta voluptas sint incidunt aspernatur non laudantium eius
-      doloremque fugiat, repudiandae illo cupiditate nemo qui explicabo porro
-      eligendi amet suscipit quidem. Non,
-      <em title="This is a em">tempore eum! Numquam</em> nulla placeat officiis
-      ea, soluta esse reprehenderit pariatur laudantium doloribus sunt enim
-      doloremque expedita veritatis corrupti est officia consectetur
-      consequuntur! Doloremque, quibusdam! Asperiores magni aspernatur nulla!
-      Eligendi beatae et voluptatibus rem deserunt! Possimus tenetur mollitia
-      adipisci nostrum asperiores totam non deleniti optio eius eum,
-      reprehenderit cum delectus autem labore iure iusto quas illo aliquam?
-      Eaque, beatae? Aut, labore nostrum iure iste vero quis recusandae rerum
-      magnam sed, id pariatur sunt reiciendis, veniam numquam similique eos!
-      Ullam hic sunt provident porro similique vel eos natus ad veritatis!
+      This is a normal paragraph that shows the styles that are applied to it by
+      default.
+      <br /><br />
+      Of course you can overwrite them to suit your taste.
+      <br /><br />
+      Here is a sample of the styles that apply to
+      <a href="#"> the links </a> by default and the<em>
+        This is an emphasis tag.</em
+      >
     </p>
 
+    <hr class="separation" />
+    <h3 class="title">blockquote elements examples</h3>
     <blockquote>
       This is <br />
       a multinile <br />
       blockquote <br />
     </blockquote>
-
     <blockquote class="inverted">
       This is <br />
       a .inverted <br />
       blockquote <br />
     </blockquote>
+
+    <hr class="separation" />
+    <h3 class="title">list elements examples</h3>
     <ul>
       <h1>h1 inside of ul is a title</h1>
       <li>This is a list item</li>
       <li>This is a list item</li>
       <li>This is a list item</li>
     </ul>
+    <ol>
+      <h1>h1 inside of ul is a title</h1>
+      <li>This is a list item</li>
+      <li>This is a list item</li>
+      <li>This is a list item</li>
+    </ol>
+    
 
-    <hr />
-    <button>Button Default</button>
-    <button class="solid">.solid Button</button>
-    <button class="invert">.invert Button</button>
-    <button class="big">.big Button</button>
-    <button class="outline">.outline Button</button>
-    <button class="flat">.flat Button</button>
     <hr class="separation" />
+    <h3 class="title">hr elements examples</h3>
+    <hr />
+    <hr class="separation" title="hr.separation" style="outline: 1px dashed;"></hr>
+
+
+    <hr class="separation" />
+    <h3 class="title">button elements examples</h3>
+    <button>default button</button>
+    <button class="solid">.solid</button>
+    <button class="inverted">.inverted</button>
+    <button class="big">.big</button>
+    <button class="big inverted">.big.inverted</button>
+    <button class="flat">.flat</button>
+    <button class="outline">.outline</button>
+
+    <hr class="separation" />
+    <h3 class="title">form elements examples</h3>
     <form>
       <fieldset>
         <label for="imput">Name</label>
-        <input type="text" placeholder="Normal imput" id="imput" />
-        <label for="ageRangeField">Age Range</label>
-        <select id="ageRangeField">
+        <input type="text" placeholder="Default imput"/>
+        <label for="select">Age Range</label>
+        <select id="select">
           <option value="0-13">0-13</option>
           <option value="14-17">14-17</option>
           <option value="18-23">18-23</option>
           <option value="24+">24+</option>
         </select>
-        <label for="commentField">Comment</label>
-        <textarea placeholder="This is texarea" id="commentField"></textarea>
-        <input type="checkbox" id="confirmField" />
+        <label for="texarea">Comment</label>
+        <textarea placeholder="This is texarea"></textarea>
+        <label for="radio">label for radio</label>
+        <input type="radio" name="radio" id="">
+        <label for="checkbox">label for checkbox</label>
+        <input type="checkbox" name="checkbox" />
         <input type="submit" value="Send" />
       </fieldset>
     </form>
