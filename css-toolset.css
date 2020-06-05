@@ -1,3 +1,11 @@
+/* 
+* Autor: Germán Aliprandi
+* Github: https://github.com/galiprandi/css-toolset.css
+*
+* Find the perfect palette by mixing search terms. 
+* visit: https://coolors.co/palettes/trending
+*
+*/
 :root {
   --text: #262626;
   --hover: #e76f51;
@@ -189,6 +197,9 @@ hr.separation {
 .solid {
   background-color: var(--text);
   color: white;
+}
+button.solid {
+  border: 1px solid;
 }
 /*
 * .outline
