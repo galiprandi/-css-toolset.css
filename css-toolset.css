@@ -15,10 +15,6 @@ body {
   letter-spacing: 0.076rem;
   font-weight: 400;
 }
-
-/* 
-    Utilities 
-*/
 hr.separation {
   padding: 1rem;
   border: none;
@@ -126,11 +122,8 @@ input[type="submit"] {
 }
 button.solid:hover,
 input[type="submit"]:hover {
-  padding: 1rem;
-  border: none;
-  margin: 0;
-  display: block;
-  width: 100%;
+  background-color: var(--hover);
+  border-color: var(--hover);
 }
 button.outline {
   border: 0;
@@ -147,6 +140,7 @@ select:hover {
 }
 form * {
   display: block;
+  width: 100%;
 }
 fieldset {
   border-radius: 0.5rem;
@@ -166,7 +160,12 @@ textarea {
   padding: 0 1.3rem;
   cursor: pointer;
 }
-input:focus {
+input:focus,
+input:hover,
+textarea:focus,
+select:focus,
+select:hover {
+  outline: 0;
   border-color: var(--hover);
 }
 select {
@@ -175,4 +174,5 @@ select {
 input[type="checkbox"] {
   outline: 1px solid;
   margin: 1.5rem 0;
+  width: auto;
 }
