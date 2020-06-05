@@ -1,2 +1,2 @@
-# -css-toolset.css
+# css-toolset.css
 A super lightweight css toolset
