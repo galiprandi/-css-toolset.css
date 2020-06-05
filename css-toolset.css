@@ -77,7 +77,8 @@ hr {
 /*
 * button
  */
-button:hover {
+button:hover,
+input[type="submit"]:hover {
   color: var(--hover);
   border-color: var(--hover);
 }
@@ -109,49 +110,51 @@ button.big {
 /*
 * from
 */
- select:hover {
+select:hover {
   border-color: var(--text);
   color: var(--text);
 }
 form * {
-	display: block;
-	width: 100%;
-	font-size: 1rem;
-	font-family: unset;
-	margin: .5rem 0;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-family: unset;
+  margin: 0.5rem 0;
 }
 fieldset {
-	border-radius: 0.3rem;
-	border: 1px solid;
-	padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid;
+  padding: 1rem;
 }
 label {
   opacity: 0.6;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
-input, select, textarea {
-	border: 1px solid;
-	line-height: 2.3rem;
-	border-radius: 0.3rem;
-	padding-left: 1rem;
-	cursor: pointer;
-	outline: 0;
+input,
+select,
+textarea {
+  border: 1px solid;
+  line-height: 2.3rem;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+  cursor: pointer;
+  outline: 0;
 }
 input:hover,
 input:focus,
 textarea:hover,
 textarea:focus,
 select:focus,
-select:hover
-{
+select:hover {
   outline: 0;
   border-color: var(--hover);
 }
 select {
   padding: 0.3rem;
 }
-input[type="checkbox"], input[type="radio"] {
-	width: auto;
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
 }
 
 /*
@@ -203,7 +206,8 @@ hr.separation {
 /*
 * .inverted
 */
-.inverted {
+.inverted
+ {
   background-color: var(--hover);
   color: white;
 }
