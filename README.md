@@ -5,11 +5,10 @@
 
 ## Usage
 
-Download file **`css-toolset.css`** or clone repo, and link in your `index.html`.
-
-or simply linking:
-
-`<link rel="stylesheet" href="https://galiprandi.github.io/css-toolset.css/css-toolset.css">`
+1. Download file **`css-toolset.css`** or clone repo or simply linking:
+  `<link rel="stylesheet" href="https://galiprandi.github.io/css-toolset.css/css-toolset.css">`
+  
+2. Change color variables on top of `css-toolset.css`
 
 ## ToDo:
 
