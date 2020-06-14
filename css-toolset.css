@@ -169,6 +169,28 @@ input[type="radio"] {
 }
 
 /*
+* Tables
+*/
+table {
+  width: 100%;
+}
+thead tr {
+  color: var(--hover);
+  text-align: left;
+  /* background: red; */
+}
+th,
+td {
+  padding: 0.5rem 0;
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: rgba(94, 94, 94, 0.1);
+}
+tbody tr:hover {
+  background-color: rgba(94, 94, 94, 0.1);
+}
+
+/*
 *  .title
 */
 nav.title {
