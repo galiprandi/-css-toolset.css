@@ -157,6 +157,7 @@ button:hover {
 button.big {
   display: block;
   width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 /*
