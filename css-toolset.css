@@ -168,6 +168,7 @@ form * {
   width: 100%;
   width: -webkit-fill-available;
   width: -moz-available;
+  width: fill-available;
   font-size: 1rem;
   line-height: 2rem;
 }
