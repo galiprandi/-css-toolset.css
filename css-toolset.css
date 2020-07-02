@@ -156,8 +156,9 @@ button:hover {
 
 button.big {
   display: block;
-  width: -moz-available;
   width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
 }
 
 /*
@@ -166,10 +167,6 @@ button.big {
 form * {
   display: block;
   width: 100%;
-  max-width: 100%;
-  width: -webkit-fill-available;
-  width: -moz-available;
-  width: fill-available;
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -193,6 +190,9 @@ textarea {
 }
 form button {
   padding: 8px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
 }
 input:hover,
 input:focus,
@@ -328,5 +328,6 @@ input[type="submit"]:hover {
 */
 .complementary,
 .Com {
+  -webkit-filter: hue-rotate(180deg);
   filter: hue-rotate(180deg);
 }
