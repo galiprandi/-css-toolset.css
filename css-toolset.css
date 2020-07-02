@@ -220,6 +220,7 @@ input[type="checkbox"] {
 table {
   width: 100%;
   line-height: 2;
+  table-layout: fixed;
 }
 
 thead tr {
