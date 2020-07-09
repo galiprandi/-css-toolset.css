@@ -173,6 +173,7 @@ form * {
 
 fieldset {
   padding: 1rem;
+  border: 1px solid var(--text);
   border-radius: var(--border-radius);
 }
 
