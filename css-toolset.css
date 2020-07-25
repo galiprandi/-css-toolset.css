@@ -7,12 +7,9 @@
 *
 */
 
-/* Import Font */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
-
 :root {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", system-ui, sans-serif;
   color: var(--text);
 
   --text: #262626;
@@ -46,10 +43,7 @@ body {
 *******************************************************************/
 /* nav element */
 nav {
-  /* background: var(--text); */
-  /* color: white; */
   padding: 1rem;
-  /* margin: 0.8rem 0; */
   border-radius: 0.4rem;
 }
 
@@ -137,16 +131,15 @@ hr {
 }
 
 /* button elements */
+
 button,
 input[type="submit"] {
-  all: unset;
   transition: all 100ms linear;
   border: 1px solid var(--text);
   border-radius: var(--border-radius);
   cursor: pointer;
   line-height: 3rem;
-  padding: 0 1rem;
-  margin: 1rem 0;
+  padding: 0 1.5rem;
 }
 
 button:hover {
@@ -174,6 +167,7 @@ form * {
 fieldset {
   padding: 1rem;
   border-radius: var(--border-radius);
+  border: 1px solid var(--text);
 }
 
 label {
@@ -187,6 +181,10 @@ textarea {
   border: 1px solid var(--text);
   border-radius: var(--border-radius);
   padding: 0.5rem;
+}
+select {
+  padding: 13px 0.5rem;
+  background-color: transparent;
 }
 form button {
   padding: 8px;
@@ -209,45 +207,52 @@ textarea {
 
 input[type="radio"],
 input[type="checkbox"] {
-  display: block;
-  width: auto;
   transform: scale(1.5);
+  width: revert;
+  display: revert;
 }
 
 /*
 * Tables
 */
+
 table {
-  width: 100%;
-  line-height: 2;
+  border-spacing: 0.5rem;
   table-layout: fixed;
+  width: 100%;
 }
 
-thead tr {
+thead,
+tfoot {
   color: var(--hover);
-  text-align: left;
+  font-weight: bold;
 }
 
-thead th {
+thead th,
+thead td {
+  /* font-weight: initial; */
   border-bottom: 1px solid var(--text);
 }
 
-th,
-td {
-  list-style: 2rem;
+tfoot th,
+tfoot td {
+  border-top: 1px solid var(--text);
+}
+
+td,
+th {
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+tbody tr:hover {
+  outline: 1px solid var(--hover);
 }
 
 tbody tr:nth-child(2n + 1) {
   background-color: rgba(94, 94, 94, 0.1);
-}
-
-tbody tr:hover {
-  outline: 1px solid;
-  outline-color: var(--hover);
-}
-
-tfoot td {
-  border-top: 1px solid var(--text);
 }
 
 /*
@@ -291,13 +296,15 @@ button.solid:hover {
 * Remove the rounded edges.
 */
 .inverted.flat,
-.flat {
+.flat,
+.Flat {
   border-radius: 0;
 }
 /*
 * .Inv
 * .inverted
-* Inverts the colors defined in the variables --text and --hover.
+* Inverts the colors defined in the 
+*         variables --text and --hover.
 */
 .inverted,
 .Inv {
