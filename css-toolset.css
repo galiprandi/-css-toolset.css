@@ -8,13 +8,13 @@
 */
 
 :root {
-  box-sizing: border-box;
-  font-family: "Montserrat", system-ui, sans-serif;
-  color: var(--text);
-
   --text: #262626;
   --hover: #e76f51;
   --border-radius: 4px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--text);
 }
 
 *,
@@ -98,7 +98,6 @@ em {
 }
 /* blockquote element */
 blockquote {
-  padding: 0.5rem 1.5rem;
   border-radius: var(--border-radius);
   border: 0.5rem solid var(--hover);
   border-top: 0;
@@ -106,6 +105,7 @@ blockquote {
   background-color: rgba(1, 1, 1, 0.09);
   margin-left: 0;
   margin-right: 0;
+  padding: 0.5rem 1.5rem;
 }
 
 /* list element */
@@ -142,9 +142,15 @@ input[type="submit"] {
   padding: 0 1.5rem;
 }
 
-button:hover {
-  color: var(--hover);
+input[type="submit"] {
+  background-color: var(--hover);
+  color: white;
   border-color: var(--hover);
+}
+
+button:hover {
+  border-color: var(--hover);
+  color: var(--hover);
 }
 
 button.big {
@@ -164,6 +170,10 @@ form * {
   line-height: 2rem;
 }
 
+form:invalid [type="submit"] {
+  display: none;
+}
+
 fieldset {
   padding: 1rem;
   border: 1px solid var(--text);
@@ -173,6 +183,10 @@ fieldset {
 
 label {
   margin: 0;
+}
+
+input:invalid {
+  color: var(--hover);
 }
 
 input,
@@ -193,14 +207,6 @@ form button {
   width: -moz-available;
   width: stretch;
 }
-input:hover,
-input:focus,
-select:hover,
-select:focus,
-textarea:hover,
-textarea:focus {
-  border-color: var(--hover);
-}
 
 textarea {
   min-height: 10rem;
@@ -208,9 +214,9 @@ textarea {
 
 input[type="radio"],
 input[type="checkbox"] {
+  display: revert;
   transform: scale(1.5);
   width: revert;
-  display: revert;
 }
 
 /*

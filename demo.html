@@ -45,9 +45,7 @@
       framework from which you can start
       <em>generating mobile sites with more modern styles</em>.
     </p>
-    <p>
-      To do this, several styles are overwritten by default browsers.
-    </p>
+    <p>To do this, several styles are overwritten by default browsers.</p>
     <p>
       <b>Status: In development (not for production)</b>
     </p>
@@ -56,24 +54,16 @@
 
     <h3 class="title">Tools and Utilities</h3>
     <ul>
-      <li>
-        .flat - Remove the rounded edges.
-      </li>
+      <li>.flat - Remove the rounded edges.</li>
       <li>
         .Sol - Element with color background I define in the variable --hover.
       </li>
-      <li>
-        .Com - Swap colors for their complementary.
-      </li>
-      <li>
-        .Out - Remove the border from the elements
-      </li>
+      <li>.Com - Swap colors for their complementary.</li>
+      <li>.Out - Remove the border from the elements</li>
       <li>
         .Inv - Inverts the colors defined in the variables --text and --hover.
       </li>
-      <li>
-        hr.Sep - Invisible 1rem separation (only for hr tags)
-      </li>
+      <li>hr.Sep - Invisible 1rem separation (only for hr tags)</li>
     </ul>
 
     <h3 class="title">nav elements examples</h3>
@@ -108,9 +98,7 @@
       default.
     </p>
 
-    <p>
-      Of course you can overwrite them to suit your taste.
-    </p>
+    <p>Of course you can overwrite them to suit your taste.</p>
     <p>
       Here is a sample of the styles that apply to
       <a href="#"> the links </a> by default and this is an
@@ -120,15 +108,9 @@
     <hr class="Sep" />
 
     <h3 class="title">blockquote elements examples</h3>
-    <blockquote>
-      This is a blockquote
-    </blockquote>
-    <blockquote class="Inv">
-      This is a blockquote.Inv
-    </blockquote>
-    <blockquote class="Com">
-      This is a blockquote.Com
-    </blockquote>
+    <blockquote>This is a blockquote</blockquote>
+    <blockquote class="Inv">This is a blockquote.Inv</blockquote>
+    <blockquote class="Com">This is a blockquote.Com</blockquote>
 
     <hr class="Sep" />
 
@@ -152,7 +134,7 @@
     default hr
     <hr />
     hr.Sep use as separator
-    <hr class="Sep" title="hr.Sep" style="outline: 1px dashed;" />
+    <hr class="Sep" title="hr.Sep" style="outline: 1px dashed" />
 
     <hr class="separation" />
     <h3 class="title">button elements examples</h3>
@@ -171,9 +153,15 @@
     <h3 class="title">form elements examples</h3>
 
     <form>
+      <legend>Form Styles</legend>
       <fieldset>
         <label for="imput">Name</label>
-        <input type="text" placeholder="Default imput" />
+        <input type="text" placeholder="Default input" />
+        <input
+          type="email"
+          placeholder="This is a email required input"
+          required
+        />
         <label for="select">Age Range</label>
         <select>
           <option value="0-13">0-13</option>
@@ -182,13 +170,17 @@
           <option value="24+">24+</option>
         </select>
         <label for="texarea">Comment</label>
-        <textarea placeholder="This is texarea"></textarea>
+        <textarea placeholder="This is textarea"></textarea>
         <label for="radio">input type radio</label>
         <input type="radio" name="radio-group" />
         <input type="radio" name="radio-group" />
         <label for="checkbox">input type checkbox</label>
         <input type="checkbox" name="checkbox" />
         <input type="submit" value="Send" />
+        <small class="Hov"
+          >* The submit button will be visible when all required values has been
+          completed</small
+        >
       </fieldset>
     </form>
 
