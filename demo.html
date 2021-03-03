@@ -7,75 +7,54 @@
     <link rel="stylesheet" href="css-toolset.css" />
   </head>
   <body>
-    <table>
-      <thead>
-        <tr>
-          <th>Header content 1</th>
-          <th>Header content 2</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <tr>
-          <td>Footer content 1</td>
-          <td>Footer content 2</td>
-        </tr>
-      </tfoot>
-      <tbody>
-        <tr>
-          <td>content 1</td>
-          <td>content 2</td>
-        </tr>
-        <tr>
-          <td>content 1</td>
-          <td>content 2</td>
-        </tr>
-        <tr>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing</td>
-          <td>content 2</td>
-        </tr>
-      </tbody>
-    </table>
-
     <nav class="Inv">
       <h1>css-toolset.css</h1>
     </nav>
-
+    <hr class="Sep" />
     <p>
-      This is a <em>small set of tools</em> that aims to generate a starter
-      framework from which you can start
-      <em>generating mobile sites with more modern styles</em>.
+      This is a small CSS stylesheet that provides a set of enhancements and
+      utility classes that make your website look more elegant, usable and
+      responsive, mainly on small screens.
     </p>
-    <p>To do this, several styles are overwritten by default browsers.</p>
     <p>
-      <b>Status: In development (not for production)</b>
+      You just need to import the stylesheet into your document and all the
+      default styles will be applied.
     </p>
+    <p>Status: In development (not for production)</p>
 
     <hr class="separation" />
 
-    <h3 class="title">Tools and Utilities</h3>
+    <h3 class="title">Utility Classes Available</h3>
     <ul>
-      <li>.flat - Remove the rounded edges.</li>
+      <li><b>.flat</b> - Remove the rounded borders.</li>
       <li>
-        .Sol - Element with color background I define in the variable --hover.
+        <b> .Sol</b> - Element with color background defined by css variable
+        --hover.
       </li>
-      <li>.Com - Swap colors for their complementary.</li>
-      <li>.Out - Remove the border from the elements</li>
+      <li><b> .Com</b> - Swap the colors between they complementary.</li>
+
+      <li><b>.Out</b> - Remove the border.</li>
       <li>
-        .Inv - Inverts the colors defined in the variables --text and --hover.
+        <b>Inv</b> - Inverts the colors defined in the variables --text and
+        --hover.
       </li>
-      <li>hr.Sep - Invisible 1rem separation (only for hr tags)</li>
+      <li>
+        <b>hr.Sep</b> - Invisible 1rem separation (only valid for hr tags)
+      </li>
     </ul>
 
-    <h3 class="title">nav elements examples</h3>
-    <nav>This is default nav</nav>
+    <hr class="Sep" />
+
+    <h3 class="title">NAV examples (This is a nav with class .title)</h3>
     <nav><h1>This is a h1 inside a nav</h1></nav>
     <nav class="Inv">This is a nav.Inv</nav>
     <nav class="Inv Com">This is a nav.Inv.Com</nav>
     <nav class="Inv flat">This is a nav.Inv.flat</nav>
+    <nav>This is default nav</nav>
 
     <hr class="Sep" />
 
-    <h3 class="title">headline elements examples</h3>
+    <h3 class="title">HEADLINE examples</h3>
     <h1>This is a h1</h1>
     <h2>This is a h2</h2>
     <h3>This is a h3</h3>
@@ -89,40 +68,38 @@
 
     <hr class="Sep" />
 
-    <h3 class="title">p elements examples</h3>
-    <p class="inverted">This is a p.inverted"</p>
-    <p class="inverted flat">This is a p.inverted.flat"</p>
-    <p class="Inv Com">This is a p.Inv.Com"</p>
-    <p>
-      This is a normal paragraph that shows the styles that are applied to it by
-      default.
-    </p>
+    <h3 class="title">P examples</h3>
+    <p class="inverted">This is a p.inverted</p>
+    <p class="inverted flat">This is a p.inverted.flat</p>
+    <p class="Inv Com">This is a p.Inv.Com</p>
+    <p>This is a normal paragraph that shows the styles applied by default.</p>
 
-    <p>Of course you can overwrite them to suit your taste.</p>
+    <p>Of course you can overwrite the styles them to suit your taste.</p>
     <p>
-      Here is a sample of the styles that apply to
-      <a href="#"> the links </a> by default and this is an
+      Here is a sample of the styles that <a href="#">apply to the links</a> by
+      default and this is an
       <em>emphasis tag.</em>
     </p>
 
     <hr class="Sep" />
 
-    <h3 class="title">blockquote elements examples</h3>
+    <h3 class="title">BLOCKQUOTE examples</h3>
     <blockquote>This is a blockquote</blockquote>
     <blockquote class="Inv">This is a blockquote.Inv</blockquote>
     <blockquote class="Com">This is a blockquote.Com</blockquote>
 
     <hr class="Sep" />
 
-    <h3 class="title">list elements examples</h3>
+    <h3 class="title">LIST examples</h3>
     <ul>
-      <span>span inside of ul is a title</span>
-      <li>This is a list item</li>
-      <li>This is a list item</li>
-      <li>This is a list item</li>
+      <span>This is a span inside of UL (work like a title)</span>
+      <li>This is a list item 1</li>
+      <li>This is a list item 2</li>
+      <li>This is a list item 3</li>
     </ul>
+    <hr class="Sep" />
     <ol>
-      <span>order list example</span>
+      <span>This is a order list</span>
       <li>This is a list item</li>
       <li>This is a list item</li>
       <li>This is a list item</li>
@@ -130,16 +107,16 @@
 
     <hr class="Sep" />
 
-    <h3 class="title">hr elements examples</h3>
+    <h3 class="title">HR examples</h3>
     default hr
     <hr />
-    hr.Sep use as separator
+    hr.Sep use as separator of 1rem
     <hr class="Sep" title="hr.Sep" style="outline: 1px dashed" />
 
     <hr class="separation" />
-    <h3 class="title">button elements examples</h3>
+    <h3 class="title">BUTTONS examples</h3>
 
-    <button>button</button>
+    <button>Default</button>
     <button class="Com">.Com</button>
     <button class="Sol">.Sol</button>
     <button class="Inv">Inv</button>
@@ -150,32 +127,43 @@
 
     <hr class="Sep" />
 
-    <h3 class="title">form elements examples</h3>
+    <h3 class="title">FORM examples</h3>
 
     <form>
-      <legend>Form Styles</legend>
+      <legend>For form title use legend tag</legend> </legend>
       <fieldset>
-        <label for="imput">Name</label>
-        <input type="text" placeholder="Default input" />
+        <label for="imput">Label for input</label>
+        <input type="text" placeholder="This is default input" />
         <input
           type="email"
           placeholder="This is a email required input"
           required
         />
-        <label for="select">Age Range</label>
+        <label for="select">Example of select element</label>
         <select>
           <option value="0-13">0-13</option>
           <option value="14-17">14-17</option>
           <option value="18-23">18-23</option>
           <option value="24+">24+</option>
         </select>
-        <label for="texarea">Comment</label>
+        <label for="texarea">This is a textarea</label>
         <textarea placeholder="This is textarea"></textarea>
-        <label for="radio">input type radio</label>
-        <input type="radio" name="radio-group" />
-        <input type="radio" name="radio-group" />
-        <label for="checkbox">input type checkbox</label>
+
+        <label for="radio1">Options 1</label>
+        <input type="radio" id="radio1" name="radio-group" />
+        
+        <label for="radio2">Options 2</label>
+        <input type="radio" id="radio2" name="radio-group" />
+
+        <label for="radio3">Options 3</label>
+        <input type="radio" id="radio3" name="radio-group" />
+
+        <label for="radio4">Options 4</label>
+        <input type="radio" id="radio4" name="radio-group" />
+
+        <label for="checkbox">Input type checkbox</label>
         <input type="checkbox" name="checkbox" />
+
         <input type="submit" value="Send" />
         <small class="Hov"
           >* The submit button will be visible when all required values has been

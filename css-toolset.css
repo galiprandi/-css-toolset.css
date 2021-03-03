@@ -83,9 +83,7 @@ p {
 /* anchor element */
 a {
   color: inherit;
-  font-weight: 600;
   transition: all 100ms ease-in-out;
-  text-decoration: none;
 }
 
 a:hover {
@@ -94,8 +92,9 @@ a:hover {
 
 /* em element */
 em {
-  font-weight: bolder;
+  font-weight: bold;
 }
+
 /* blockquote element */
 blockquote {
   border-radius: var(--border-radius);
@@ -175,9 +174,9 @@ form:invalid [type="submit"] {
 }
 
 fieldset {
-  padding: 1rem;
   border: 1px solid var(--text);
   border-radius: var(--border-radius);
+  padding: 1rem;
   border: 1px solid var(--text);
 }
 
