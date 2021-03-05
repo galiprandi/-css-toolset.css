@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>css-toolset.css</title>
     <link rel="stylesheet" href="css-toolset.css" />
+    <style>
+      :root {
+        --text: #262626;
+        --primary: #e76f51;
+        --bg: #ffffff;
+      }
+      .sticky {
+        position: sticky;
+        top: 1em;
+        padding: 1em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 6px;
+        margin-bottom: 1em;
+      }
+      .sticky > input {
+        margin: 0;
+      }
+    </style>
+    <script>
+      function changeColor() {
+        const colorText = document.getElementById("textColor").value
+        document.documentElement.style.setProperty("--text", colorText)
+        document.querySelector("pre .textColor").textContent = colorText
+
+        const colorHover = document.getElementById("hoverColor").value
+        document.documentElement.style.setProperty("--primary", colorHover)
+        document.querySelector("pre .hoverColor").textContent = colorHover
+
+        const colorBg = document.getElementById("bgColor").value
+        document.documentElement.style.setProperty("--bg", colorBg)
+        document.querySelector("pre .bgColor").textContent = colorBg
+      }
+      // changeColor()
+    </script>
   </head>
   <body>
     <nav class="Inv">
@@ -24,19 +60,63 @@
 
     <hr class="separation" />
 
+    <h2>How to Use:</h2>
+
+    <p style="text-align: left">1) Import stylesheet in head section from:</p>
+    https://galiprandi.github.io/css-toolset.css/css-toolset.min.css"
+
+    <p style="text-align: left">2) Select your favorite colors.</p>
+    <header class="sticky Inv">
+      <label for="textColor">--text:</label>
+      <input
+        type="color"
+        name="textColor"
+        id="textColor"
+        value="#333333"
+        onchange="changeColor()"
+      />
+      <label for="hoverColor">--hover:</label>
+      <input
+        type="color"
+        name="hoverColor"
+        id="hoverColor"
+        value="#e76f51"
+        onchange="changeColor()"
+      />
+      <label for="hoverColor">--bg:</label>
+      <input
+        type="color"
+        name="bgColor"
+        id="bgColor"
+        value="#ffffff"
+        onchange="changeColor()"
+      />
+    </header>
+    <p style="text-align: left">
+      3) Set this variables in the stylesheet of your document
+    </p>
+
+    <pre>
+:root { 
+  --text: <span class="textColor">#333333</span>;
+  --primary: <span class="hoverColor">#e76f51</span>;
+  --bg: <span class="bgColor">#ffffff</span>;
+}
+  </pre>
+
     <h3 class="title">Utility Classes Available</h3>
     <ul>
       <li><b>.flat</b> - Remove the rounded borders.</li>
       <li>
         <b> .Sol</b> - Element with color background defined by css variable
-        --hover.
+        --primary.
       </li>
       <li><b> .Com</b> - Swap the colors between they complementary.</li>
 
       <li><b>.Out</b> - Remove the border.</li>
       <li>
         <b>Inv</b> - Inverts the colors defined in the variables --text and
-        --hover.
+        --primary.
       </li>
       <li>
         <b>hr.Sep</b> - Invisible 1rem separation (only valid for hr tags)
@@ -130,7 +210,7 @@
     <h3 class="title">FORM examples</h3>
 
     <form>
-      <legend>For form title use legend tag</legend> </legend>
+      <legend>For form title use legend tag</legend>
       <fieldset>
         <label for="imput">Label for input</label>
         <input type="text" placeholder="This is default input" />
@@ -151,7 +231,7 @@
 
         <label for="radio1">Options 1</label>
         <input type="radio" id="radio1" name="radio-group" />
-        
+
         <label for="radio2">Options 2</label>
         <input type="radio" id="radio2" name="radio-group" />
 

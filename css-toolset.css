@@ -8,8 +8,10 @@
 */
 
 :root {
-  --text: #262626;
-  --hover: #e76f51;
+  --text: #333333;
+  --primary: #e76f51;
+  --bg: #ffffff;
+
   --border-radius: 4px;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -29,6 +31,8 @@
 }
 
 body {
+  background-color: var(--bg);
+  color: var(--text);
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
@@ -41,6 +45,7 @@ body {
 /******************************************************************
 *   Elements styles
 *******************************************************************/
+
 /* nav element */
 nav {
   padding: 1rem;
@@ -64,7 +69,6 @@ h5,
 h6 {
   margin: revert;
   text-align: center;
-  font-family: inherit;
 }
 h1.title,
 h2.title,
@@ -72,12 +76,13 @@ h3.title,
 h4.title,
 h5.title,
 h6.title {
-  color: var(--hover);
+  color: var(--primary);
   border-bottom: 1px solid var(--text);
 }
+
 /* paragraph element */
 p {
-  text-align: justify;
+  text-align: center;
 }
 
 /* anchor element */
@@ -87,7 +92,7 @@ a {
 }
 
 a:hover {
-  color: var(--hover);
+  color: var(--primary);
 }
 
 /* em element */
@@ -98,7 +103,7 @@ em {
 /* blockquote element */
 blockquote {
   border-radius: var(--border-radius);
-  border: 0.5rem solid var(--hover);
+  border: 0.5rem solid var(--primary);
   border-top: 0;
   border-bottom: 0;
   background-color: rgba(1, 1, 1, 0.09);
@@ -130,7 +135,6 @@ hr {
 }
 
 /* button elements */
-
 button,
 input[type="submit"] {
   transition: all 100ms linear;
@@ -142,14 +146,14 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-  background-color: var(--hover);
+  background-color: var(--primary);
   color: white;
-  border-color: var(--hover);
+  border-color: var(--primary);
 }
 
 button:hover {
-  border-color: var(--hover);
-  color: var(--hover);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 button.big {
@@ -185,7 +189,7 @@ label {
 }
 
 input:invalid {
-  color: var(--hover);
+  color: var(--primary);
 }
 
 input,
@@ -221,7 +225,6 @@ input[type="checkbox"] {
 /*
 * Tables
 */
-
 table {
   border-spacing: 0.5rem;
   table-layout: fixed;
@@ -230,13 +233,12 @@ table {
 
 thead,
 tfoot {
-  color: var(--hover);
+  color: var(--primary);
   font-weight: bold;
 }
 
 thead th,
 thead td {
-  /* font-weight: initial; */
   border-bottom: 1px solid var(--text);
 }
 
@@ -254,7 +256,7 @@ th {
 }
 
 tbody tr:hover {
-  outline: 1px solid var(--hover);
+  outline: 1px solid var(--primary);
 }
 
 tbody tr:nth-child(2n + 1) {
@@ -285,9 +287,10 @@ hr.Sep {
 }
 button.Sol:hover,
 button.solid:hover {
-  background-color: var(--hover);
+  background-color: var(--primary);
   color: white;
 }
+
 /*
 * .Out
 * .outline
@@ -297,6 +300,7 @@ button.solid:hover {
 .Out {
   border: 0;
 }
+
 /*
 * .flat
 * Remove the rounded edges.
@@ -306,6 +310,7 @@ button.solid:hover {
 .Flat {
   border-radius: 0;
 }
+
 /*
 * .Inv
 * .inverted
@@ -314,7 +319,7 @@ button.solid:hover {
 */
 .inverted,
 .Inv {
-  background-color: var(--hover);
+  background-color: var(--primary);
   color: white;
 }
 p.inverted,
@@ -325,7 +330,7 @@ p.Inv {
 
 button.Inv,
 button.inverted {
-  border-color: var(--hover);
+  border-color: var(--primary);
 }
 button.Inv:hover,
 button.inverted:hover,
