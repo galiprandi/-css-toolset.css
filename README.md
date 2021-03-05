@@ -1,6 +1,6 @@
 # css-toolset.css
 
-A a small CSS stylesheet
+A a small CSS stylesheet for mobile first.
 
 ## [Try Demo](https://galiprandi.github.io/css-toolset.css/demo.html)
 
