@@ -2,7 +2,7 @@
 
 A a small CSS stylesheet
 
-## [Demo](https://galiprandi.github.io/css-toolset.css/demo.html)
+## [Try Demo](https://galiprandi.github.io/css-toolset.css/demo.html)
 
 ### Usage
 
