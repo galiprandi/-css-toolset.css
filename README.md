@@ -1,17 +1,39 @@
 # css-toolset.css
-> A super lightweight css toolset and mobile first
 
-### [Very simple demo](https://galiprandi.github.io/css-toolset.css/demo.html)
+> A a small CSS stylesheet
 
-## Usage
+## [Demo](https://galiprandi.github.io/css-toolset.css/demo.html)
 
-1. Download file **`css-toolset.css`** or clone repo or simply linking:
-  `<link rel="stylesheet" href="https://galiprandi.github.io/css-toolset.css/css-toolset.css">`
-  
-2. Change color variables on top of `css-toolset.css`
+### Usage
 
-## ToDo:
+1 - Download file **`css-toolset.min.css`**, clone repo or simply link:
 
-- More test
+`<link rel="stylesheet" href="https://galiprandi.github.io/css-toolset.css/css-toolset.min.css">`
 
-- Support more elements
+2 - Change color variables on your style section:
+
+:root {
+
+--text: #333333;
+
+--primary: #e76f51;
+
+--bg: #ffffff;
+
+}
+
+3 - Enjoy
+
+### Utility Classes Available
+
+flat - Remove the rounded borders.
+
+Sol - Element with color background defined by css variable --primary.
+
+Com - Swap the colors between they complementary.
+
+Out - Remove the border.
+
+Inv - Inverts the colors defined in the
+
+hr.Sep - Invisible 1rem separation (only valid for hr tags)
